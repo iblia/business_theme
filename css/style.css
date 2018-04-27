@@ -32,7 +32,6 @@ section {
   color: #ccc !important;
 }
 
-
 .slogan {
   text-align: center;
 }
@@ -75,7 +74,7 @@ section {
   padding-bottom: 5px;
 }
 
-.navbar-nav > li > a {
+.navbar-nav>li>a {
   padding: 20px;
   font-size: 18px;
   font-weight: bold;
@@ -84,8 +83,8 @@ section {
   font-family: 'Oswald', sans-serif;
 }
 
-.navbar-nav > li > a span {
-  margin:5px 0 0 0 ;
+.navbar-nav>li>a span {
+  margin: 5px 0 0 0;
   padding: 0;
   font-size: 14px;
   display: block;
@@ -94,18 +93,23 @@ section {
   text-transform: none;
 }
 
-.navbar-nav a:hover,.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-nav a:hover,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
   background: #0383c0 !important;
   color: #fff !important;
 }
 
 .jumbotron {
-	margin:0 !important;
-	min-height:450px;
-	background:url(../img/bg.jpg) no-repeat;
+  margin: 0 !important;
+  min-height: 450px;
+  background: url(../img/bg.jpg) no-repeat;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
 }
@@ -129,4 +133,52 @@ footer {
   height: 60px;
   background: #f4f4f4;
   padding-top: 20px;
+}
+
+@media (max-width: 990px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,
+  .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse .collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    float: none;
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: none;
+  }
+  .collapse .in {
+    display: block !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    min-height: 300px;
+  }
+  .jumbotron img {
+    display: none;
+  }
 }
